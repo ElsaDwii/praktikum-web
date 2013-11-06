@@ -22,4 +22,4 @@ define('MHS', 'Mahasiswa');
 data_handler('?m=data');
 ?>
 </body>
-</html>
+</html>\

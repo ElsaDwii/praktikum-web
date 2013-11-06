@@ -33,6 +33,7 @@ if (isset($_GET['id']) && ctype_digit($_GET['id'])) {
 // Key untuk penghapusan data
 $id = $_GET['id'];
 // Lengkapi pernyataan SQL hapus data
+$sql = "DELETE FROM " . MHS . " WHERE nim =" . $id;
 $res = mysql_query($sql);
 if ($res) { ?>
 <script type="text/javascript">

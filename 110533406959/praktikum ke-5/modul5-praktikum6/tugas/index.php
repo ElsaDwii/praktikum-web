@@ -21,5 +21,16 @@ define('MHS', 'Mahasiswa');
 // Memanggil fungsi data handler
 data_handler('?m=data');
 ?>
+<form action = "<?php $_SERVER['PHP_SELF'];?>" method = "post">
+</br>
+<input type ="submit" name = "logout" value = "LOGOUT">
+</form>
+
+<?php
+if (isset($_POST["logout"])){
+?><script language = "JavaScript">
+alert("Terimakasih atas kunjungan Anda di WebKu")
+document.location='Login.php'</script><?php
+}?>
 </body>
 </html>
